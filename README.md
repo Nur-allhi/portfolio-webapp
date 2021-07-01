@@ -14,3 +14,9 @@
 ---
 
 1. Nav bar base created.
+
+### V-0.2 Changelog:
+
+---
+
+1. Navbar Completed with toggoling.

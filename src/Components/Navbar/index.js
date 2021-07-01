@@ -8,26 +8,37 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
 } from "./NavbarElements";
 
-const NavbarMain = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Nur</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="skills">Skills</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="projects">Projects</NavLinks>
+            </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="contact">Contact</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
   );
 };
 
-export default NavbarMain;
+export default Navbar;
