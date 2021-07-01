@@ -20,3 +20,10 @@
 ---
 
 1. Navbar Completed with toggoling.
+
+### V-0.3 Changelog:
+
+---
+
+1. Main home builded.
+2. Video added in the background.
