@@ -27,3 +27,11 @@
 
 1. Main home builded.
 2. Video added in the background.
+
+### V-0.4 Changelog:
+
+---
+
+1. About added.
+2. Cv download button added.
+3. Mobile responsive .

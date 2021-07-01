@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import bgVideo from "../../Video/bgVideo.mp4";
 import {
   AboutContainer,
@@ -7,19 +6,20 @@ import {
   VideoBg,
   AboutContent,
   AboutH1,
-  AboutP,
+  AboutH3,
   CvBtnWrapper,
   CvDownload,
   CvDownloadFilled,
-  Button,
+  CvDownloadButton,
+  AboutP,
 } from "./AboutEelements";
 
 const AboutSection = () => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  };
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
 
   return (
     <AboutContainer>
@@ -28,15 +28,23 @@ const AboutSection = () => {
       </AboutBg>
 
       <AboutContent>
-        <AboutP>Hi There 👋, I am </AboutP>
+        <AboutH3>Hi There 👋, I am </AboutH3>
         <AboutH1>Nur E Allhi</AboutH1>
+        <br />
+        <AboutP>
+          Self taught web-developer, I have done multiple projects till now.
+          With some good reviews. I have gave a new life to some amazing website
+          designs with my coding skills.
+          <br />
+          <br />I can turn your requirement into a good looking website.
+        </AboutP>
         <CvBtnWrapper>
-          <Button onMouseEnter={onHover} onMouseLeave={onHover}>
-            Download Resume{hover ? <CvDownloadFilled /> : <CvDownload />}
-          </Button>
+          <CvDownloadButton>Download CV</CvDownloadButton>
         </CvBtnWrapper>
       </AboutContent>
     </AboutContainer>
+    // onMouseEnter={onHover} onMouseLeave={onHover}
+    //  Download Resume{hover ? <CvDownloadFilled /> : <CvDownload />}
   );
 };
 

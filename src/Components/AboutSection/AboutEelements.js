@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 750px;
   position: relative;
   z-index: 1;
 `;
@@ -39,59 +39,104 @@ export const AboutContent = styled.div`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
+  width: 700px;
   align-items: center;
-  /* text-align: center; */
+
+  @media screen and (max-width: 768px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const AboutH1 = styled.h1`
-  font-size: 48px;
+  font-size: 58px;
   color: #fff;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 50px;
   }
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
 
-export const AboutP = styled.p`
+export const AboutH3 = styled.h3`
   color: #fff;
-  font: 30px;
+  font: 28px;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 22px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 16px;
+  }
+`;
+
+export const AboutP = styled.p`
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 
 export const CvBtnWrapper = styled.div`
   margin-top: 32px;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 `;
 
-export const Button = styled.button`
-  border-radius: 50px;
-  background: #47597e;
-
-  white-space: nowrap;
-  padding: 16px 30px;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+// Custom Button:
+export const CvDownloadButton = styled.button`
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  box-sizing: border-box;
   text-decoration: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 4s infinite linear;
+  position: relative;
+  background-color: transparent;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #dbe6fd;
-    color: #010606;
+    background-color: white;
+    color: #000000;
+  }
+
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.9em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.4em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
   }
 `;
 
