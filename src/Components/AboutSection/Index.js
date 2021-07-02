@@ -11,18 +11,13 @@ import {
   CvBtnWrapper,
   CvDownloadButton,
   AboutP,
-} from "./AboutEelements";
+} from "./AboutStyle";
 
 const AboutSection = () => {
   return (
     <AboutContainer>
-      {/* <AboutBg>
-        <VideoBg autoPlay loop muted src={bgVideo} type="video/mp4" />
-      </AboutBg> */}
-
       <AboutContent>
         <AboutH3>Hi There 👋, I am </AboutH3>
-
         <MovingText
           type="popIn"
           duration="5000ms"

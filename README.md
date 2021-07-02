@@ -43,3 +43,9 @@
 1. Bg Video removed.
 2. Gradient Color bg added.
 3. Pop in name added.
+
+### V-0.6 Changelog:
+
+---
+
+1. Project Card base created.
