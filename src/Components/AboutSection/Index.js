@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import MovingText from "react-moving-text";
 import bgVideo from "../../Video/bgVideo.mp4";
 import {
   AboutContainer,
@@ -8,28 +9,31 @@ import {
   AboutH1,
   AboutH3,
   CvBtnWrapper,
-  CvDownload,
-  CvDownloadFilled,
   CvDownloadButton,
   AboutP,
 } from "./AboutEelements";
 
 const AboutSection = () => {
-  // const [hover, setHover] = useState(false);
-
-  // const onHover = () => {
-  //   setHover(!hover);
-  // };
-
   return (
     <AboutContainer>
-      <AboutBg>
+      {/* <AboutBg>
         <VideoBg autoPlay loop muted src={bgVideo} type="video/mp4" />
-      </AboutBg>
+      </AboutBg> */}
 
       <AboutContent>
         <AboutH3>Hi There 👋, I am </AboutH3>
-        <AboutH1>Nur E Allhi</AboutH1>
+
+        <MovingText
+          type="popIn"
+          duration="5000ms"
+          delay="0s"
+          direction="normal"
+          timing="ease"
+          iteration="1"
+          fillMode="none"
+        >
+          <AboutH1>Nur E Allhi</AboutH1>
+        </MovingText>
         <br />
         <AboutP>
           Self taught web-developer, I have done multiple projects till now.
@@ -43,8 +47,6 @@ const AboutSection = () => {
         </CvBtnWrapper>
       </AboutContent>
     </AboutContainer>
-    // onMouseEnter={onHover} onMouseLeave={onHover}
-    //  Download Resume{hover ? <CvDownloadFilled /> : <CvDownload />}
   );
 };
 

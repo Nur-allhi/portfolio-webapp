@@ -35,3 +35,11 @@
 1. About added.
 2. Cv download button added.
 3. Mobile responsive .
+
+### V-0.5 Changelog:
+
+---
+
+1. Bg Video removed.
+2. Gradient Color bg added.
+3. Pop in name added.

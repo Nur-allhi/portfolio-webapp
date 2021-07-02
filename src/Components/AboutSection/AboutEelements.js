@@ -3,7 +3,7 @@ import { BsCloudDownload } from "react-icons/bs";
 import { GiCloudDownload } from "react-icons/gi";
 
 export const AboutContainer = styled.div`
-  background: #0c0c0c;
+  /* background: #0c0c0c; */
   display: flex;
   justify-content: center;
   align-items: center;
