@@ -21,7 +21,11 @@ const ProjectsCard = (props) => {
         <CardTitle>{name}</CardTitle>
         <CardDetails>{details}</CardDetails>
         <CardButton>
-          <a href={link} target="blank">
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href={link}
+            target="blank"
+          >
             View site
           </a>
         </CardButton>

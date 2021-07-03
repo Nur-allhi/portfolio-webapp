@@ -49,3 +49,9 @@
 ---
 
 1. Project Card base created.
+
+### V-0.7 Changelog:
+
+---
+
+1. Projects section added.

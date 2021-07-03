@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
+import { CardContainer } from "./ProjectsCardStyle";
 
 const projectSDetails = [
   {
@@ -33,10 +34,14 @@ const projectSDetails = [
 const Projects = () => {
   return (
     <div>
-      <h1>My Projects</h1>
-      {projectSDetails.map((projects) => (
-        <ProjectsCard projects={projects}></ProjectsCard>
-      ))}
+      <div style={{ textAlign: "center", color: "white" }}>
+        <h1>My Projects</h1>
+      </div>
+      <CardContainer>
+        {projectSDetails.map((projects) => (
+          <ProjectsCard projects={projects}></ProjectsCard>
+        ))}
+      </CardContainer>
     </div>
   );
 };
