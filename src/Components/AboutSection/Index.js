@@ -1,10 +1,8 @@
 import React from "react";
 import MovingText from "react-moving-text";
-import bgVideo from "../../Video/bgVideo.mp4";
+
 import {
   AboutContainer,
-  AboutBg,
-  VideoBg,
   AboutContent,
   AboutH1,
   AboutH3,

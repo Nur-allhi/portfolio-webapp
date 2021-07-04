@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectsCard from "./ProjectsCard";
-import { CardContainer } from "./ProjectsCardStyle";
+import { CardContainer, SectionHeading } from "./ProjectsCardStyle";
 
 const projectSDetails = [
   {
@@ -33,16 +33,16 @@ const projectSDetails = [
 
 const Projects = () => {
   return (
-    <div>
-      <div style={{ textAlign: "center", color: "white" }}>
-        <h1>My Projects</h1>
-      </div>
+    <>
+      <SectionHeading>Projects</SectionHeading>
+      {/* <Fade left> */}
       <CardContainer>
         {projectSDetails.map((projects) => (
           <ProjectsCard projects={projects}></ProjectsCard>
         ))}
       </CardContainer>
-    </div>
+      {/* </Fade> */}
+    </>
   );
 };
 

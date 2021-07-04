@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const SectionHeading = styled.h1`
+  text-align: center;
+`;
 export const CardContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -27,7 +30,9 @@ export const Card = styled.div`
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   &:hover {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   @media screen and (max-width: 768px) {
@@ -71,5 +76,10 @@ export const CardButton = styled.button`
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition: all 0.2s ease-in-out;
     background: #fff;
+  }
+
+  & a {
+    text-decoration: none;
+    color: black;
   }
 `;

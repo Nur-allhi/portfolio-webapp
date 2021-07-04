@@ -55,3 +55,9 @@
 ---
 
 1. Projects section added.
+
+### V-0.8 Changelog:
+
+--
+
+1. Skills section added with styling.

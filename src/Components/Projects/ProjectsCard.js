@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import {
   Card,
   ImageContainer,
@@ -14,22 +15,20 @@ const ProjectsCard = (props) => {
 
   return (
     <Card>
-      <ImageContainer className="imgBx">
-        <CardImage src={image} alt="" />
-      </ImageContainer>
-      <CardContent className="content">
-        <CardTitle>{name}</CardTitle>
-        <CardDetails>{details}</CardDetails>
-        <CardButton>
-          <a
-            style={{ textDecoration: "none", color: "black" }}
-            href={link}
-            target="blank"
-          >
-            View site
-          </a>
-        </CardButton>
-      </CardContent>
+      <Fade left>
+        <ImageContainer className="imgBx">
+          <CardImage src={image} alt="" />
+        </ImageContainer>
+        <CardContent className="content">
+          <CardTitle>{name}</CardTitle>
+          <CardDetails>{details}</CardDetails>
+          <CardButton>
+            <a href={link} target="blank">
+              View site
+            </a>
+          </CardButton>
+        </CardContent>
+      </Fade>
     </Card>
   );
 };
