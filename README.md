@@ -61,3 +61,11 @@
 --
 
 1. Skills section added with styling.
+
+### V-0.9 Changelog:
+
+--
+
+1. Nav bar scroll bg added
+2. jump to specific section with the help of navbar.
+3. color changes.

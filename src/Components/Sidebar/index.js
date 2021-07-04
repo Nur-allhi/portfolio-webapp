@@ -18,18 +18,38 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SideBarWarpper>
         <SideBarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            smooth="true"
+            duration="1000"
+            onClick={toggle}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="skills" onClick={toggle}>
+          <SidebarLink
+            to="skills"
+            smooth="true"
+            duration="1000"
+            onClick={toggle}
+          >
             Skills
           </SidebarLink>
-          <SidebarLink to="projects" onClick={toggle}>
+          <SidebarLink
+            to="projects"
+            smooth="true"
+            duration="1000"
+            onClick={toggle}
+          >
             Projects
           </SidebarLink>
         </SideBarMenu>
         <SideBtnWrap>
-          <SideBarRoute to="contact" onClick={toggle}>
+          <SideBarRoute
+            to="contact"
+            smooth="true"
+            duration="1000"
+            onClick={toggle}
+          >
             Contact
           </SideBarRoute>
         </SideBtnWrap>

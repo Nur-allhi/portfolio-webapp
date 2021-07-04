@@ -50,14 +50,14 @@ const skillDetails = [
 
 const Skills = () => {
   return (
-    <>
+    <div id="skills">
       <SectionHeading>Skills</SectionHeading>
       <SkillsContainer>
         {skillDetails.map((skillData) => (
           <SkillCard key={skillData.id} skillData={skillData}></SkillCard>
         ))}
       </SkillsContainer>
-    </>
+    </div>
   );
 };
 

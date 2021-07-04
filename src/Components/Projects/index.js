@@ -33,7 +33,7 @@ const projectSDetails = [
 
 const Projects = () => {
   return (
-    <>
+    <div id="projects">
       <SectionHeading>Projects</SectionHeading>
       {/* <Fade left> */}
       <CardContainer>
@@ -42,7 +42,7 @@ const Projects = () => {
         ))}
       </CardContainer>
       {/* </Fade> */}
-    </>
+    </div>
   );
 };
 

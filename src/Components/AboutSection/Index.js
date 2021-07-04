@@ -13,7 +13,7 @@ import {
 
 const AboutSection = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutContent>
         <AboutH3>Hi There 👋, I am </AboutH3>
         <MovingText
@@ -36,7 +36,14 @@ const AboutSection = () => {
           <br />I can turn your requirement into a good looking website.
         </AboutP>
         <CvBtnWrapper>
-          <CvDownloadButton>Download CV</CvDownloadButton>
+          <CvDownloadButton>
+            <a
+              href="https://drive.google.com/file/d/10A4Zwp6Cl2SgFw0X9zgE_XfgIx7FEhjo/view?usp=sharing"
+              target="blank"
+            >
+              Download CV
+            </a>
+          </CvDownloadButton>
         </CvBtnWrapper>
       </AboutContent>
     </AboutContainer>

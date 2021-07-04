@@ -79,16 +79,18 @@ export const CvDownloadButton = styled.button`
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.5em;
   box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 300;
-  color: #ffffff;
   text-align: center;
   transition: all 0.2s;
   animation: bn13bouncy 4s infinite linear;
   position: relative;
   background-color: transparent;
-
+  & a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 20px;
+    font-weight: 300;
+  }
   &:hover {
     background-color: white;
     color: #000000;

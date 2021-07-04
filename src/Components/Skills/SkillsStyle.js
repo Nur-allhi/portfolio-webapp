@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  width: 1000px;
+  width: 59vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@ export const SkillsContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    width: 90vw;
+    width: 85vw;
   }
 `;
 
@@ -17,7 +17,7 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   padding: 1rem;
-  width: 40%;
+  width: 35%;
   margin: 10px 0;
   background: white;
   border-radius: 1rem;
@@ -32,6 +32,7 @@ export const SkillLogo = styled.div`
   padding: 0.5rem;
   border-radius: 1rem;
   margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const SkillImage = styled.img`

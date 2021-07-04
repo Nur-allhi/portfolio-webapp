@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: transparent; */
+  background: ${({ scrollNav }) => (scrollNav ? "#f3518f" : "transparent")};
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   top: 0;
-
+  z-index: 10;
+  position: sticky;
   @media screen and (max-width: 960px) {
     transition: 0ms.8s all ease;
   }
@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
