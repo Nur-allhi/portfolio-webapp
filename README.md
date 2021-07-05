@@ -69,3 +69,10 @@
 1. Nav bar scroll bg added
 2. jump to specific section with the help of navbar.
 3. color changes.
+
+### V-1.0 Changelog:
+
+--
+
+1. Contact form builded.
+2. Social media handle added.
