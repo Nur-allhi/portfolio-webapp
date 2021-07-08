@@ -76,3 +76,9 @@
 
 1. Contact form builded.
 2. Social media handle added.
+
+### V-1.1 Changelog:
+
+--
+
+1. Image optimized for better exprience

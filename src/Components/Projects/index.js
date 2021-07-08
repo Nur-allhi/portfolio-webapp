@@ -12,7 +12,7 @@ const projectSDetails = [
   },
   {
     name: "Fluffy Book Store",
-    image: "https://i.ibb.co/ZdFk399/Fluffy-book.png",
+    image: "https://i.ibb.co/vJkTQzy/Fluffy-book.jpg",
     details:
       "This website contain programming Books, Order Process, Admin Panle, Add Book, Etc.",
     link: "https://fluffy-book-store.web.app/",
@@ -25,7 +25,7 @@ const projectSDetails = [
   },
   {
     name: "Tempreture Hot",
-    image: "https://i.ibb.co/vj6LrKQ/tempreture.png",
+    image: "https://i.ibb.co/xFTVftS/ighly-Compressed.jpg",
     details: "Check the weather outside",
     link: "https://nur-allhi.github.io/temperature-hot/",
   },
